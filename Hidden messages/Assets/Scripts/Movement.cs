@@ -60,7 +60,7 @@ public class CrashBandicootMovement : MonoBehaviour
         Vector3 horizontalMovement = transform.right * horizontalInput * moveSpeed * Time.deltaTime;
         rb.MovePosition(rb.position + horizontalMovement);
     }
-
+    // see movement advanced srcipt
     private void Jump()
     {
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
